@@ -28,7 +28,28 @@
     <label for="checkin" > Check-in-Date:</label>
     <input type="date" id="checkin" name="check-in" required>
     <br><br>
-    
+
+    <!--CHECK-OUT DATE-->
+    <label for="checkout">CHECK-OUT DATE:</label>
+    <input type="date" id="CHECK-OUT DATE" name="check-out" required>
+    <br><br>
+     
+    <!--ROOMTYPE-->
+    <label for="roomtype"Room Type:</label>
+        <select id="roomtype" name="roomtype">
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+        </select>
+        <br><br>
+
+        <!--NO OF GUESTS-->
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests"
+        min="1" max="10" required>
+        <br><br>
+
+        
     </form>
 </body>
 </html>
