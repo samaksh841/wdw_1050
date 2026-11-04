@@ -8,6 +8,8 @@
 <body>
     <h1 align="center" > HOTEL ROOM BOOKING FORM</h1>
     <form action="#" method="post" align="center">
+<fieldset>
+      <legend>Personal Information</legend>
 
         <!--NAME-->
         <label for ="fullname">Full Name:</label>
@@ -23,6 +25,9 @@
         <label for="phone">Phone:</label>
         <input type="tel" id="phone" name="phone" required>
         <br><br>
+</fieldset>
+
+<fieldset><legend>Booking Details</legend>
 
         <!--CHECK-IN-DATE-->
     <label for="checkin" > Check-in-Date:</label>
@@ -35,10 +40,10 @@
     <br><br>
      
     <!--ROOMTYPE-->
-    <label for="roomtype"Room Type:</label>
+    <label for="roomtype">Room-type:</label>
         <select id="roomtype" name="roomtype">
-            <option value="single">Single</option>
-            <option value="double">Double</option>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
             <option value="suite">Suite</option>
         </select>
         <br><br>
@@ -48,9 +53,11 @@
         <input type="number" id="guests" name="guests"
         min="1" max="10" required>
         <br><br>
-
+        </fieldset>
+        
+   <fielset><legend>Additional Requests:</legend>
         <!--SPECIAL REQUESTS-->
-        <label for="requests"> Special Requests</label>
+        <label for="requests"> Special Requests:</label>
         <textarea id="requests" name="requests"></textarea>
         <br><br>
 
@@ -58,6 +65,7 @@
         <input type="submit" value="Book Now">
         <!--RESET FORM-->
         <input type="reset" value="Reset Form">
+        </fieldset>
     </form>
 </body>
 </html>
